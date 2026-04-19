@@ -1,7 +1,7 @@
 "use client";
 import React from 'react'
 import { useState } from 'react';
-import { FaBook, FaUser, FaHome, FaBars,FaUserPlus, } from 'react-icons/fa';
+import { FaBook, FaUser, FaHome, FaBars,FaUserPlus, FaHandHolding } from 'react-icons/fa';
 import { BiSolidBookAdd } from 'react-icons/bi';
 
 
@@ -16,6 +16,7 @@ function Sidebar() {
 
     { name: 'Usuarios', icon: <FaUser />, link: '/users' },
     { name: 'Agregar Usuario', icon: <FaUserPlus />, link: '/crearusuario' },
+    { name: 'Prestamos', icon: <FaHandHolding /> , link: '/prestamos' },
   ];
   return (
     <div className={`bg-blue-600 text-white h-screen p-4 flex flex-col transition-width duration-300 ${open ? 'w-64' : 'w-16'}`}>
